@@ -13,9 +13,10 @@ async function bootstrap() {
 
   const app = await NestFactory.create(AppModule);
   app.enableCors({
-    origin: 'http://localhost:5173',
+    origin: ['http://localhost:5173', 'https://ecommerce-e-shop-withbackend.vercel.app', process.env.FRONTEND_URL],
     methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
     preflightContinue: false,
+    credentials: true,
   });
   app.setGlobalPrefix('api');
   
