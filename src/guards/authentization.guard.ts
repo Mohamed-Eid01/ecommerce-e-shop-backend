@@ -1,14 +1,17 @@
 import { CanActivate, ExecutionContext, Injectable, UnauthorizedException } from '@nestjs/common';
 import { Reflector } from '@nestjs/core';
 import { JwtService } from '@nestjs/jwt';
-import { RolesDecorator } from './roles.decorator';
+import { ROLES_KEY } from './roles.decorator';
 
 @Injectable()
 export class UsersGuard implements CanActivate {
   constructor(private reflector: Reflector , private jwtService:JwtService) {}
 
  async canActivate(context: ExecutionContext): Promise<boolean> {
-    const roles = this.reflector.get<string[]>(RolesDecorator, context.getHandler());
+    const roles = this.reflector.getAllAndOverride<string[]>(ROLES_KEY, [
+      context.getHandler(),
+      context.getClass(),
+    ]);
     if(!roles){
         return true
     }

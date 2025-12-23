@@ -25,6 +25,7 @@ async function bootstrap() {
     }),
   );
 
+  await app.init();
   // 👇 مهم جدًا لـ Vercel
   const server = app.getHttpAdapter().getInstance();
   return server;
