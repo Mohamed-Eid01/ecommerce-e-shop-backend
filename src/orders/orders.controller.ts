@@ -12,9 +12,9 @@ import {
   UseGuards
 } from "@nestjs/common";
 import { OrdersService } from "./orders.service";
-import { ResponseShape } from "src/interfaces/response.interface";
-import { RolesDecorator } from "src/guards/roles.decorator";
-import { UsersGuard } from "src/guards/authentization.guard";
+import { ResponseShape } from "../interfaces/response.interface";
+import { RolesDecorator } from "../guards/roles.decorator";
+import { UsersGuard } from "../guards/authentization.guard";
 import { CreateOrderDto } from "./dto/create.order.dto";
 import { UpdateOrderDto } from "./dto/update.order.dto";
 

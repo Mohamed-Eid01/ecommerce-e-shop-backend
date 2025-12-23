@@ -3,7 +3,7 @@ import { Model } from 'mongoose';
 import { Users } from '../interfaces/user.interface';
 import * as bcrypt from 'bcrypt';
 import { JwtService } from '@nestjs/jwt';
-import { ResponseShape } from 'src/interfaces/response.interface';
+import { ResponseShape } from '../../interfaces/response.interface';
 import { SignUpDtop } from '../dto/signup.dto';
 
 @Injectable()

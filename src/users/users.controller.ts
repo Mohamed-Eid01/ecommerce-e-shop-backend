@@ -13,10 +13,10 @@ import {
 } from '@nestjs/common';
 import { UsersService } from './users.service';
 import { Users } from './interfaces/user.interface';
-import { ResponseShape } from 'src/interfaces/response.interface';
+import { ResponseShape } from '../interfaces/response.interface';
 import { CreateUserDto } from './dto/create-user.dto';
-import { RolesDecorator } from 'src/guards/roles.decorator';
-import { UsersGuard } from 'src/guards/authentization.guard';
+import { RolesDecorator } from '../guards/roles.decorator';
+import { UsersGuard } from '../guards/authentization.guard';
 import { UpdateUserDto } from './dto/update.user.dto';
 
 @Controller('users')

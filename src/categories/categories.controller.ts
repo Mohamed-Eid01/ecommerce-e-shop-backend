@@ -1,8 +1,8 @@
 import { Body, Controller, Delete, Get, HttpException, HttpStatus, Param, Patch, Post, Query, UseGuards } from "@nestjs/common";
-import { ResponseShape } from "src/interfaces/response.interface";
+import { ResponseShape } from "../interfaces/response.interface";
 import { CategoriesService } from "./categories.service";
-import { RolesDecorator } from "src/guards/roles.decorator";
-import { UsersGuard } from "src/guards/authentization.guard";
+import { RolesDecorator } from "../guards/roles.decorator";
+import { UsersGuard } from "../guards/authentization.guard";
 import { updateCategoryDto } from "./dto/update.category.dto";
 import { CreateCategoryDto } from "./dto/create.category.dto";
 

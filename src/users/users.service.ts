@@ -1,7 +1,7 @@
 import { Get, Inject, Injectable, Query, NotFoundException, InternalServerErrorException } from '@nestjs/common';
 import { Model } from 'mongoose';
 import { Users } from './interfaces/user.interface';
-import { ResponseShape } from 'src/interfaces/response.interface';
+import { ResponseShape } from '../interfaces/response.interface';
 import { CreateUserDto } from './dto/create-user.dto';
 import * as bcrypt from 'bcrypt';
 import { UpdateUserDto } from './dto/update.user.dto';

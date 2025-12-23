@@ -1,7 +1,7 @@
 import { Inject, Injectable, NotFoundException, InternalServerErrorException } from '@nestjs/common';
 import { Model } from 'mongoose';
 import { Order } from './interfaces/order.interface';
-import { ResponseShape } from 'src/interfaces/response.interface';
+import { ResponseShape } from '../interfaces/response.interface';
 import { CreateOrderDto } from './dto/create.order.dto';
 import { UpdateOrderDto } from './dto/update.order.dto';
 

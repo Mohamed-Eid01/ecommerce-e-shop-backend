@@ -11,7 +11,7 @@ import {
 } from "@nestjs/common";
 import { CartService } from "./cart.service";
 import { CartItem } from "./interfaces/cart.interface";
-import { UsersGuard } from "src/guards/authentization.guard";
+import { UsersGuard } from "../guards/authentization.guard";
 
 @Controller('cart')
 export class CartController {

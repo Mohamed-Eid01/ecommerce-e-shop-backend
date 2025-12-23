@@ -1,6 +1,6 @@
 import { Body, Controller, Get, HttpException, HttpStatus, Post, ValidationPipe } from "@nestjs/common";
 import { AuthService } from "./auth.service";
-import { ResponseShape } from "src/interfaces/response.interface";
+import { ResponseShape } from "../../interfaces/response.interface";
 import { SignInDto } from "../dto/signin.dto";
 import { SignUpDtop } from "../dto/signup.dto";
 

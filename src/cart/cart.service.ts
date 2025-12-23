@@ -1,7 +1,7 @@
 import { Inject, Injectable, NotFoundException, InternalServerErrorException, BadRequestException } from "@nestjs/common";
 import { Model, Types } from "mongoose";
 import { Cart, CartItem } from "./interfaces/cart.interface";
-import { ResponseShape } from "src/interfaces/response.interface";
+import { ResponseShape } from "../interfaces/response.interface";
 
 @Injectable()
 export class CartService {

@@ -1,7 +1,7 @@
 import { Inject, Injectable, NotFoundException, InternalServerErrorException } from "@nestjs/common";
 import { Model } from "mongoose";
 import { CategoriesInterface } from "./interfaces/categories.interfaces";
-import { ResponseShape } from "src/interfaces/response.interface";
+import { ResponseShape } from "../interfaces/response.interface";
 import { CreateCategoryDto } from "./dto/create.category.dto";
 import { updateCategoryDto } from "./dto/update.category.dto";
 

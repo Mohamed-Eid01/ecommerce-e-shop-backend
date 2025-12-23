@@ -1,10 +1,10 @@
 import { Inject, Injectable, NotFoundException, InternalServerErrorException } from '@nestjs/common';
 import { Model } from 'mongoose';
 import { Product } from './interfaces/products.interface';
-import { ResponseShape } from 'src/interfaces/response.interface';
+import { ResponseShape } from '../interfaces/response.interface';
 import { CreateProductDto } from './dto/create.product.dto';
 import { UpdateProductDto } from './dto/update.product.dto';
-import { CloudinaryService } from 'src/common/providers/cloudinary.service';
+import { CloudinaryService } from '../common/providers/cloudinary.service';
 
 @Injectable()
 export class ProductsService {

@@ -14,11 +14,11 @@ import {
   UploadedFiles
 } from "@nestjs/common";
 import { FilesInterceptor } from "@nestjs/platform-express";
-import { multerMemoryConfig } from "src/common/config/multer.config";
+import { multerMemoryConfig } from "../common/config/multer.config";
 import { ProductsService } from "./products.service";
-import { ResponseShape } from "src/interfaces/response.interface";
-import { RolesDecorator } from "src/guards/roles.decorator";
-import { UsersGuard } from "src/guards/authentization.guard";
+import { ResponseShape } from "../interfaces/response.interface";
+import { RolesDecorator } from "../guards/roles.decorator";
+import { UsersGuard } from "../guards/authentization.guard";
 import { CreateProductDto } from "./dto/create.product.dto";
 import { UpdateProductDto } from "./dto/update.product.dto";
 
